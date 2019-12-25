@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{1B244B90-13DE-4BF1-B412-001178B50E85}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>NoFussDiplom</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)MenuCustomer\AboutCompany.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BarCustomer\Authorization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BarButtonClicked.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BarCustomer\Basket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BarCustomer\FavoriteProducts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)InBarButtonClicked.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MenuCustomer\ChangePersonalData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MenuCustomer\Main.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MenuCustomer\MyOrders.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MenuCustomer\MyProfile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BarCustomer\NoFussClub.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MenuCustomer\Products.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MenuCustomer\SaleProducts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BarCustomer\Search.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ProductList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ProductObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BarCustomer\Registration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)BarCustomer\" />
+  </ItemGroup>
+</Project>

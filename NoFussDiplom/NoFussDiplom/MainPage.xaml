@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NoFussDiplom"
+             x:Class="NoFussDiplom.MainPage"
+             Title="NoFuss"                  
+             BackgroundColor="White">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Content" BackgroundColor="Black">
+            <ContentPage.Content>
+                <StackLayout Padding="0, 46, 0, 0">
+                    <Button x:Name="ButtonMain" Text="Main" Clicked="ButtonMain_Click" BackgroundColor ="White" TextColor="Black" Font="Bold"></Button>
+                    <Button x:Name="ButtonProducts" Text="Products" Clicked="ButtonProducts_Click" BackgroundColor ="White" TextColor="Black" Font="Bold"></Button>
+                    <Button x:Name="ButtonSaleProducts" Text="Sale Products" Clicked="ButtonSaleProducts_Click" BackgroundColor ="White" TextColor="Black" Font="Bold"></Button>
+                    <Button x:Name="ButtonMyProfile" Text="My Profile" Clicked="ButtonMyProfile_Click" BackgroundColor ="White" TextColor="Black" Font="Bold" IsEnabled="True"></Button>
+                    <Button x:Name="ButtonMyOrders" Text="My Orders" Clicked="ButtonMyOrders_Click" BackgroundColor ="White" TextColor="Black" Font="Bold" IsEnabled="True"></Button>
+                    <Button x:Name="ButtonAboutCompany" Text="About Company" Clicked="ButtonAboutCompany_Click" BackgroundColor ="White" TextColor="Black" Font="Bold"></Button>
+
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage>
+            <ContentPage.Content>
+                <Label Text="Label" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
+
